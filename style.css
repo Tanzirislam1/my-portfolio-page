@@ -1,0 +1,794 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: poligon;
+    src: url('./fonts/Poligon-Bold.woff');
+    font-weight: 600;
+    font-display: block;
+}
+
+@font-face {
+    font-family: poligon;
+    src: url('./fonts/Poligon-SemiBold.woff');
+    font-weight: 500;
+    font-display: block;
+}
+
+@font-face {
+    font-family: poligon;
+    src: url('./fonts/Poligon-Medium.woff');
+    font-weight: 400;
+    font-display: block;
+}
+
+@font-face {
+    font-family: poligon;
+    src: url('./fonts/Poligon-Regular.woff');
+    font-weight: 300;
+    font-display: block;
+}
+
+body{
+    font-family: poligon;
+    margin: 0;
+}
+
+/* navigation part start */
+
+.navigation{
+    display: flex;
+    padding-left: 5%;
+    padding-bottom: 10px;
+}
+
+.side-by-side{
+    width: 40%;
+    margin-top: 20px;
+}
+
+.left-list{
+    display: flex;
+}
+
+.left-list .left-list-item{
+    margin-right: 30px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo-image {
+    position: relative;
+    top: 0;
+    left: -50px;
+}
+
+.logo-img{
+    width: 100%;
+}
+
+.logo-part{
+    width: 20%;
+    text-align: center;
+}
+
+.socially-connect{
+    width: 40%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-contents ul {
+    margin-top: 0px;
+    margin-left: 173px;
+}
+
+.social-contents ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social-contents ul li:first-child{
+    display: inline-block;
+    margin-left: 0;
+}
+
+.social-contents ul li a{
+    color: #fff;
+}
+
+.social-contents ul li a i::before {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    background: #22242D;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all .5s linear;
+}
+
+.social-contents ul li a:hover i::before{
+    transform: scale(1.4);
+}
+
+/* navigation part end */
+
+/* hero start */
+
+.top-banner{
+    background-image: url(./images/top-banner.png);
+    background-repeat: no-repeat;
+}
+
+.hero-sub-title{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.hero-subtitle{
+    margin-top: 20px;
+}
+
+.myself-text{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.my-name{
+    color: orangered;
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.welcome-text{
+    font-size: 56px;
+    font-weight: 600;
+    color: #252D36;
+}
+
+.hero-title-left-border{
+    border-image: linear;
+    border-image: linear-gradient(orangered, orange);
+    border-image-slice: 150%;
+    border-image-slice: 1;
+    border-left: 4px solid;
+    padding-left: 8px;
+}
+
+.link-button{
+    margin-top: 35px;
+}
+
+.flexible-container{
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 75px;
+    align-items: center;
+}
+
+.half-width{
+    width: 50%;
+    padding-left: 5%;
+}
+
+.half-width img{
+    width: 80%;
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 100px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+.btn:active{
+    transform: translateY(0);
+    color: #fff;
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    border-radius: 100px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.btn-gradient-orange{
+    background: linear-gradient(to right bottom, orange, orangered);
+    color: #fff;
+}
+
+.btn-gradient-orange::after{
+    background: linear-gradient(to right bottom, orange, orangered);
+
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+/* hero end */
+
+.text-color{
+    color: orange;
+}
+
+/* my self information start */
+
+.main-parent{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 200px;
+}
+
+.my-self-title{
+    font-size: 46px;
+    font-weight: 500;
+    text-align: center;
+    color: #252D36;
+}
+
+.my-personal-information{
+    width: 30%;
+}
+
+.biography-title{
+    font-size: 24px;
+    font-weight: 400;
+    color: #252D36;
+}
+
+.biography-text {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #586471;
+    width: 60%;
+}
+
+.contact{
+    margin-top: 45px;
+}
+
+.contact-title{
+    font-size: 24px;
+    font-weight: 400;
+    color: #252D36;
+}
+
+.my-city {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #586471;
+    width: 50%;
+}
+
+.my-gmail {
+    font-size: 18px;
+    font-weight: 300;
+    color: #586471;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.my-contact-number {
+    font-size: 18px;
+    font-weight: 300;
+    color: #586471;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.service-title{
+    font-size: 24px;
+    font-weight: 400;
+    color: #252D36;
+    margin-top: 45px;
+}
+
+.services{
+    font-size: 18px;
+    font-weight: 300;
+    color: #586471;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.middle-image{
+    width: 40%;
+    text-align: center;
+}
+
+.my-experiences{
+    width: 30%;
+    justify-content: center;
+}
+
+.my-experience-1 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #252D36;
+}
+
+.my-experience-1 h3{
+    font-size: 40px;
+    font-weight: 300;
+    color: #586471;
+    margin-top: 10px;
+}
+
+.my-experience-2{
+    margin-top: 25px;
+}
+
+.my-experience-2 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #252D36;
+}
+
+.my-experience-2 h3{
+    font-size: 40px;
+    font-weight: 300;
+    color: #586471;
+    margin-top: 10px;
+}
+
+.my-experience-3{
+    margin-top: 25px;
+}
+
+.my-experience-3 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #252D36;
+}
+
+.my-experience-3 h3{
+    font-size: 40px;
+    font-weight: 300;
+    color: #586471;
+    margin-top: 10px;
+}
+
+.my-experience-4{
+    margin-top: 25px;
+}
+
+.my-experience-4 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #252D36;
+}
+
+.my-experience-4 h3{
+    font-size: 40px;
+    font-weight: 300;
+    color: #586471;
+    margin-top: 10px;
+}
+
+.all-experience-contents{
+    text-align: right;
+}
+
+.my-personal-image {
+    width: 115%;
+    position: relative;
+    top: -110px;
+    left: -29px;
+}
+
+/* my self information end */
+
+/* logo part start */
+
+.all-logo-contents{
+    display: flex;
+    padding-left: 5%;
+}
+
+.logo-1{
+    width: 16%;
+    text-align: center;
+}
+
+.logo-1 img{
+    width: 85%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo-2{
+    width: 16%;
+    text-align: right;
+}
+
+.logo-2 img{
+    width: 80%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo-3{
+    width: 16%;
+    text-align: right;
+}
+
+.logo-3 img{
+    width: 80%;
+    position: relative;
+    top: 0;
+    left: 25px;
+}
+
+.logo-4{
+    width: 16%;
+    text-align: center;
+}
+
+.logo-4 img {
+    width: 45%;
+    position: relative;
+    top: -3px;
+    left: 40px;
+}
+
+.logo-5{
+    width: 16%;
+    text-align: center;
+}
+
+.logo-5 img {
+    width: 60%;
+    position: relative;
+    top: -3px;
+    left: 15px;
+}
+
+.logo-6{
+    width: 16%;
+    text-align: center;
+}
+
+.logo-6 img {
+    width: 55%;
+    position: relative;
+    top: -3px;
+    left: 0;
+}
+
+/* logo part end */
+
+/* my advantages section start */
+
+#my-advantage{
+    margin-top: 90px;
+}
+
+.all-advantage-contents{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 60px;
+}
+
+.my-advantage-title{
+    font-size: 46px;
+    font-weight: 500;
+    text-align: center;
+    color: #252D36;
+}
+
+.html-part{
+    width: 18%;
+    background: #fff;
+    text-align: center;
+    padding: 55px 15px;
+    margin-right: 30px;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.html-part:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .125);
+}
+
+.html-part img{
+    width: 100%;
+}
+
+.my-skill-1{
+    margin-top: 20px;
+    font-size: 46px;
+    font-weight: 500;
+    color: #252D36;
+}
+
+.my-skill-2{
+    margin-top: 11px;
+    font-size: 46px;
+    font-weight: 500;
+    color: #252D36;
+}
+
+.my-skill-3{
+    margin-top: 20px;
+    font-size: 46px;
+    font-weight: 500;
+    color: #252D36;
+}
+
+.my-skill-4{
+    margin-top: 20px;
+    font-size: 46px;
+    font-weight: 500;
+    color: #252D36;
+}
+
+.my-skill-5{
+    margin-top: 20px;
+    font-size: 46px;
+    font-weight: 500;
+    color: #252D36;
+}
+
+.css-part{
+    width: 18%;
+    text-align: center;
+    background: #fff;
+    padding: 55px 15px;
+    margin-right: 30px;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.css-part:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .125);
+}
+
+.css-part img{
+    width: 42%;
+}
+
+.bootstrap-part{
+    width: 18%;
+    text-align: center;
+    background: #fff;
+    padding: 55px 15px;
+    margin-right: 30px;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.bootstrap-part:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .125);
+}
+
+.bootstrap-part img{
+    width: 68%;
+}
+
+.sass-part{
+    width: 20%;
+    text-align: center;
+    background: #fff;
+    padding: 55px 15px;
+    margin-right: 30px;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.sass-part:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .125);
+}
+
+.sass-part img{
+    width: 100%;
+}
+
+.js-part{
+    width: 18%;
+    text-align: center;
+    background: #fff;
+    padding: 55px 15px;
+    margin-right: 30px;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.js-part:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .125);
+}
+
+.js-part img{
+    width: 87%;
+}
+
+/* my advantages section end */
+
+/* dream section start */
+
+.dream-all-texts{
+    margin-top: -65px;
+}
+
+.dream-big{
+    background-image: url(./images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.dream-title{
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.dream-subtitle{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.image-2{
+    width: 80%;
+}
+
+.myself-text-2{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    width: 80%;
+    margin-top: 15px;
+}
+
+/* dream section end */
+
+/* experience section start */
+
+#web-dev-experience {
+    border-image: linear-gradient(salmon, tomato);
+    border-image-slice: 100%;
+    border-image-slice: 1;
+    border-left: 7px solid;
+    padding: 40px 55px;
+}
+
+#web-dev-experience-2{
+    border-image: linear-gradient(blue,cyan);
+    border-image-slice: 1;
+    border-left: 7px solid;
+    padding: 52px 20px;
+}
+
+.web-dev-experience-contents {
+    position: relative;
+    top: -12px;
+    left: 0;
+}
+
+.experience-title{
+    font-size: 36px;
+    font-weight: 600;
+    color: #252D36;
+}
+
+.experience-area{
+    background-image: url(./images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.experience-main-title{
+    font-size: 46px;
+    font-weight: 500;
+    color: #252D36;
+    padding-left: 5%;
+}
+
+.experience-item{
+    width: 40%;
+    box-shadow: 10px 10px 40px gray;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 25px;
+    border-radius: 10px;
+}
+
+.experience-subtitle{
+    color: orange;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.experience-text{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* experience section end */
+
+/* footer start */
+
+#footer-section{
+    background: #000;
+    padding: 80px 0;
+    margin-top: 40px;
+}
+
+.footer-logo{
+    width: 19%;
+    margin: 0 auto;
+    display: block;
+}
+
+.footer-text{
+    text-align: center;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.about-me{
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-bottom: 1px solid #252D36;
+    padding-bottom: 25px;
+}
+
+.footer-title{
+    font-size: 46px;
+    font-weight: 500;
+    color: #252D36;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* footer end */
